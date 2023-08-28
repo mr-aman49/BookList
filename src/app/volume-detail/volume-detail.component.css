@@ -1,0 +1,16 @@
+.container {
+
+    padding: 10px;
+    padding-left: 220px;
+
+    inset-block-start: initial;
+    display: grid;
+}
+
+.card {
+
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-left: 5px solid orange;
+    display: grid;
+}

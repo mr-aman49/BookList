@@ -1,0 +1,35 @@
+.secttion {
+    
+    padding-left:  220px;
+}
+
+.secttion h1{
+  font-weight: bold;
+  
+}
+
+.btn {
+    float: right ;
+    padding: 10px 15px;
+    background-color: rgb(12, 4, 248);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 10px;
+    width: 200px;
+  }
+
+  .search-input {
+    border: none;
+    background-color: transparent;
+    color: rgb(1, 1, 1);
+    padding: 5px;
+  }
