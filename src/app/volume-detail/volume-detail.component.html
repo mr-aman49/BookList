@@ -2,24 +2,28 @@
   <app-section (searchTextChanged)="onSearchTextEntered($event)"></app-section>
 </div>
 
-<br>
+<br />
 <div class="details">
-
   <div class="contain">
-    
-      <div *ngFor="let user of userList; let i = index">
-    
-        <div class="container" *ngIf="searchText === '' ||  user.volumeInfo.title.toLowerCase().includes(searchText)">
-  
-          <div class="card" style="padding: 20px;">
-            <h1>{{ user.volumeInfo.title }}</h1>
-            <p>{{ user.volumeInfo.authors }}</p>
-            <p>{{ user.volumeInfo.publisher }}</p>
-            <p>{{ user.volumeInfo.publishedDate }}</p>
-            <p><img src={{user.volumeInfo.imageLinks.smallThumbnail}}></p>
-          </div>
+    <div *ngFor="let user of userList; let i = index">
+      <div
+        class="container"
+        *ngIf="
+          searchText === '' ||
+          user.volumeInfo.title.toLowerCase().includes(searchText);
+        "
+      >
+        <div class="card" style="padding: 20px">
+          <h1>{{ user.volumeInfo.title }}</h1>
+          <p>{{ user.volumeInfo.authors }}</p>
+          <p>{{ user.volumeInfo.publisher }}</p>
+          <p>{{ user.volumeInfo.publishedDate }}</p>
+          <p><img src="{{ user.volumeInfo.imageLinks.smallThumbnail }}" /></p>
         </div>
-        <br>
+      </div>
     </div>
-    
+    <!-- <ng-template #noresult>
+      No result found
+    </ng-template> -->
   </div>
+</div>

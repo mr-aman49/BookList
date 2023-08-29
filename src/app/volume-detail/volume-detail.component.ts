@@ -21,7 +21,6 @@ export class VolumeDetailComponent implements OnInit {
     this.httpClient
       .get('https://www.googleapis.com/books/v1/volumes?q=kaplan%20test%20prep')
       .subscribe((result: any) => {
-        console.log((this.userList = result.items));
         this.userList = result.items;
       });
 
@@ -30,6 +29,6 @@ export class VolumeDetailComponent implements OnInit {
 
   onSearchTextEntered(searchValue: string) {
     this.searchText = searchValue;
-    console.log('onSearchTextEntered', this.searchText);
+
   }
 }

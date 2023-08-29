@@ -1,0 +1,13 @@
+.fullpage{
+    width: 100%;
+    display: flex;
+}
+
+.navs{
+    width: 20%;
+}
+
+.content{
+    width: 80%;
+    display: flex;
+}

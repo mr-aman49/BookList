@@ -1,24 +1,18 @@
-
-.contain{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-basis: 20%;
-    
+.contain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 20%;
 }
 .container {
-
-    padding: 10px;
-    padding-left: 220px;
+  padding: 10px;
+  
 }
 
 .card {
-
-    background-color: rgb(255, 255, 255);
-    border: solid;
-    border-left: 5px solid orange;
-    height: 370px;
-    width: 380px;
-    
-    
+  background-color: rgb(255, 255, 255);
+  border: solid;
+  border-left: 5px solid orange;
+  height: 380px;
+  width: 370px;
 }
