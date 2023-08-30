@@ -15,9 +15,9 @@
       >
         <div class="card" style="padding: 20px">
           <h1>{{ user.volumeInfo.title }}</h1>
-          <p>{{ user.volumeInfo.authors }}</p>
-          <p>{{ user.volumeInfo.publisher }}</p>
-          <p>{{ user.volumeInfo.publishedDate }}</p>
+          <p>Author: {{ user.volumeInfo.authors }}</p>
+          <p>Publisher: {{ user.volumeInfo.publisher }}</p>
+          <p>Publisher Date: {{ user.volumeInfo.publishedDate }}</p>
           <p><img src="{{ user.volumeInfo.imageLinks.smallThumbnail }}" /></p>
         </div>
       </div>
